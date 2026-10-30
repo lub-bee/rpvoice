@@ -1,0 +1,30 @@
+RPVoice - changeur de voix en temps réel
+========================================
+
+1. Installer VB-Cable (gratuit) : https://vb-audio.com/Cable/
+   Lancer l'installeur en administrateur, puis redémarrer le PC.
+
+2. Lancer RPVoice.exe (aucune installation). L'audio démarre tout seul.
+   Onglet « Audio » :
+   - Micro (entrée) : votre micro.
+   - Sortie (vers le jeu) : « CABLE Input » (choisi automatiquement s'il existe).
+
+3. Dans le jeu, Discord ou Audacity : choisir « CABLE Output » comme micro.
+
+4. Pour vous entendre : onglet « Audio », cocher « M'entendre dans un casque »,
+   choisir le casque et régler son volume.
+
+5. Voix : choisir un preset à gauche, régler l'intensité (0 % = votre voix,
+   100 % = preset complet). « Voix originale » coupe les effets.
+   L'éditeur permet de modifier chaque réglage (case = activer/désactiver,
+   R = revenir à la valeur du preset, Ctrl+clic = saisir une valeur).
+
+6. Enregistrer : Ctrl+S (ou « Enregistrer »). Les presets d'usine sont protégés :
+   Ctrl+S en crée une copie. Vos presets sont dans %APPDATA%\RPVoice\presets\.
+
+7. Partager un preset : « Exporter... » puis envoyer le fichier .json à qui vous
+   voulez. « Importer... » pour charger un .json reçu.
+
+Barre du bas : latence estimée, CPU (moyenne / pointe sur la dernière seconde),
+glitchs (coupures audio). Si « rééchantillonné » s'affiche, régler le micro et
+la sortie sur 48 000 Hz dans les paramètres son de Windows.
